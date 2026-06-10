@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimerPuntoNetApp", "PrimerPuntoNetApp\PrimerPuntoNetApp.csproj", "{BB8381EF-B52D-4342-8080-F3CCF6071461}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB8381EF-B52D-4342-8080-F3CCF6071461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8381EF-B52D-4342-8080-F3CCF6071461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8381EF-B52D-4342-8080-F3CCF6071461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8381EF-B52D-4342-8080-F3CCF6071461}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FE97831-9B82-4B84-999A-DF77C0E22F7A}
+	EndGlobalSection
+EndGlobal

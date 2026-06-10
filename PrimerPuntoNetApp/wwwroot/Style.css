@@ -1,0 +1,95 @@
+﻿body {
+    margin: 0; /*margen que elimina espacio*/
+    display: flex;
+    overflow-x: hidden; /*evita scroll horizonal porque se usa animacion o position: fixed*/
+    background: #f5f5f5;
+}
+
+/* BOTÓN MENU */
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #212529;
+    color: white;
+    padding: 20px;
+    transition: left 0.4s ease;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+/* CONTENIDO */
+.contenido {
+    display: none;
+    justify-content: center;
+    width: calc(100% - 260px);
+    margin-left: 260px;
+    padding: 100px 40px;
+    position: relative;
+}
+
+.contenido.active {
+    display: flex;
+}
+
+/* TARJETAS */
+.seccion {
+    background: white;
+    width: 500px;
+
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* El siguiente codigo CSS tal vez se tenga que borrar */
+/* PORTADA */
+.hero {
+    height: 100vh; /*oculta la altura de la pantalla, por eso se ve como portada completa*/
+    background: linear-gradient(135deg, #667eea, #764ba2); /*Crea un degradado de azul a morado*/
+    color: white; /*texto blanco*/
+    display: flex; /*activa flexbox para centrar contenido*/
+    flex-direction: column; /*acomoda los elementos uuno debajo de otro*/
+    justify-content: center; /*centra verticalmente*/
+    align-items: center; /*centra horizontalmente*/
+    text-align: center; /*centra el texto*/
+}
+
+/* SECCIÓN APP (oculta abajo) */
+.app-section {
+    position: fixed; /*queda fijo y sin scroll*/
+    bottom: -100%; /*la app empieza fuera de la pantalla por debajo*/
+    left: 0; /*pegado a la izquierda*/
+    width: 100%; /*ocupa todo el ancho*/
+    height: 100vh; /*ocupa toda la pantalla*/
+    background: #f8f9fa; /*fondo gris claro como bootstrap*/
+    transition: bottom 0.6s ease; /*animacion de efecto subir*/
+    padding: 40px; /*espacio interno*/
+}
+
+    /* CUANDO SE ACTIVA */
+    .app-section.active {
+        bottom: 0; /* la app sube desde abajo al agregar active */
+    }
+
+.card-tareas {
+    max-width: 600px; /*limita el ancho a 600px*/
+    margin: auto; /*centra horizontalmente*/
+    background: white; /*fondo blanco*/
+    padding: 20px; /*espacio interno*/
+    border-radius: 15px; /*bordes redondeados*/
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /*agrega sombra*/
+}

@@ -1,8 +1,60 @@
 ﻿body {
     margin: 0; /*margen que elimina espacio*/
+    display: flex;
     overflow-x: hidden; /*evita scroll horizonal porque se usa animacion o position: fixed*/
+    background: #f5f5f5;
 }
 
+/* BOTÓN MENU */
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #212529;
+    color: white;
+    padding: 20px;
+    transition: left 0.4s ease;
+    z-index: 1000;
+}
+
+    .sidebar.active {
+        left: 0;
+    }
+
+/* CONTENIDO */
+.contenido {
+    display: none;
+    justify-content: center;
+    width: calc(100% - 260px);
+    margin-left: 260px;
+    padding: 100px 40px;
+    position: relative;
+}
+
+    .contenido.active {
+        display: flex;
+    }
+
+/* TARJETAS */
+.seccion {
+    background: white;
+    width: 500px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* El siguiente codigo CSS tal vez se tenga que borrar */
 /* PORTADA */
 .hero {
     height: 100vh; /*oculta la altura de la pantalla, por eso se ve como portada completa*/
